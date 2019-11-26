@@ -34,6 +34,10 @@ class GramsController < ApplicationController
     end
   end
 
+    def comment 
+
+    end
+
   def edit
     @gram = Gram.find_by_id(params[:id])
     return render_not_found if @gram.blank?
